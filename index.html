@@ -539,6 +539,7 @@
                 
                 <div class="contact-form">
                     <form 
+                        id="consultation form"
                     action="https://formsubmit.co/sadiyatajuddin786@gmail.com" method="POST" >
                         <div class="form-group">
                             <label for="name">Full Name</label>
@@ -629,39 +630,7 @@
             });
         });
         
-        // Form submission
-        const form = document.getElementById('consultationForm');
         
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            // Here you would typically send the data to a server
-            console.log({
-                name,
-                email,
-                message
-            });
-            
-            // Show success message
-            alert('Thank you for your consultation request. We will contact you shortly.');
-            
-            // Reset form
-            form.reset();
-        });
-        
-        // Responsive adjustment
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) {
-                navLinks.style.display = 'flex';
-            } else {
-                navLinks.style.display = 'none';
-            }
-        });
     </script>
 </body>
 </html>
