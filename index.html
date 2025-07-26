@@ -542,30 +542,32 @@
                     action="https://formsubmit.co/sadiyatajuddin786@gmail.com" method="POST" >
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" required>
+                            <input type="text" name="name" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" required>
+                            <input type="email" name="email" required>
                         </div>
                         
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone">
+                            <input type="tel" name="phone"required>
                         </div>
                         
                         <div class="form-group">
                             <label for="service">Service Needed</label>
-                            <input type="text" id="service">
+                            <input type="text" name="service"required>
                         </div>
                         
                         <div class="form-group">
                             <label for="message">Brief Description of Your Legal Needs</label>
-                            <textarea id="message" required></textarea>
+                            <textarea name="message" required></textarea>
                         </div>
                         
                         <button type="submit" class="btn">Request Consultation</button>
+                        <input type="hidden" name="-next"
+                            value="https://advocate5.github.io/mywebsite/thankyou.html">
                     </form>
                 </div>
             </div>
